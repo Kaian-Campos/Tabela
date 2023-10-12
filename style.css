@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #CCC;
+}
+
+
+/* Tabela */
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+table {
+    border: 2px solid #AAA;
+    margin-top: 15px;
+    width: 300px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #FFF;
+}
+th {
+    background: rgb(130,130,130);
+    background: linear-gradient(0deg, rgb(122, 122, 122) 0%, rgb(179, 179, 179)84%);
+}
+tr:nth-child(odd) {
+    background-color: rgb(255, 255, 96);
+}
+tr:nth-child(even) {
+    background-color: #FFF;
+}
+td a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+td a:hover {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+
+/* Botão */
+
+
+button {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 14px;
+    width: 180px;
+    font-size: 21px;
+    color: #EEE;
+    box-shadow: -3px 3px 7px #444;
+    border: transparent;
+    border-radius: 25px;
+    background: rgb(43,47,255);
+    background: linear-gradient( rgba(43,47,255,1) 31%, rgba(0,3,217,1) 76%);
+    transition: all .3s ease;
+
+}
+button:hover {
+    transform: scale(1.07);
+    background: rgb(77,80,255);
+    background: linear-gradient( rgb(73, 76, 255) 31%, rgb(27, 31, 253) 76%);
+}
+
+
+/* Selo */
+
+
+.selo {
+    position: absolute;
+    top: 35px;
+    left: -120px;
+    rotate: -45deg;
+    background: rgb(43,47,255);
+    background: linear-gradient( rgb(25, 29, 245) 31%, rgba(0,3,217,1) 76%);
+    padding: 25px;
+    width: 400px;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 0px 0px 25px #666;
+    border: 5px solid #CCC;
+    text-decoration: none;
+    color: #EEE;
+    text-shadow: 0px 0px 15px #444;
+    transition: all .3s ease;
+}
+.selo:hover {
+    transform: scale(1.04);
+    background: rgb(77,80,255);
+    background: linear-gradient( rgb(73, 76, 255) 31%, rgb(8, 12, 255) 76%);
+}
+.selo::after {
+    content: "";
+    position: absolute;
+    border: 3px solid rgb(0, 4, 250);
+    border-top: 3px solid rgba(43,47,255,1);
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+}
